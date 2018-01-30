@@ -9,6 +9,9 @@
   "installed_plugins": {
     "cordova-plugin-whitelist": {
       "PACKAGE_NAME": "com.opensource.rover"
+    },
+    "cordova-plugin-file": {
+      "PACKAGE_NAME": "com.opensource.rover"
     }
   },
   "dependent_plugins": {}
