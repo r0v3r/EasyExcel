@@ -12,6 +12,9 @@
     },
     "cordova-plugin-file": {
       "PACKAGE_NAME": "com.opensource.rover"
+    },
+    "com.opensource.rover.easyexcel.plugins": {
+      "PACKAGE_NAME": "com.opensource.rover"
     }
   },
   "dependent_plugins": {}

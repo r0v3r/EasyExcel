@@ -1,3 +1,4 @@
+.vscode
 dist/node_modules/
 dist/platforms/
 dist/www/*

@@ -5,7 +5,7 @@
     </el-row>
     <el-row class="se-toolbar" type="flex" justify="space-between">
       <div>
-        <img src="../assets/add.png"/>
+        <img src="../assets/add.png" @click="onCreateNewExcel"/>
       </div>
       <div>
         <img src='../assets/save-as.png' class="margin-right"/>
@@ -22,6 +22,12 @@ export default {
   computed:{
     indicator: function(){
       return this.fileName+'-'+this.status;
+    }
+  },
+  methods:{
+    onCreateNewExcel: function(){
+      alert('click')
+      cordova.plugins.Test.coolMethod('some msg');
     }
   }
 }
