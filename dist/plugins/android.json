@@ -7,13 +7,13 @@
     "files": {}
   },
   "installed_plugins": {
-    "cordova-plugin-whitelist": {
-      "PACKAGE_NAME": "com.opensource.rover"
-    },
     "cordova-plugin-file": {
       "PACKAGE_NAME": "com.opensource.rover"
     },
-    "com.opensource.rover.easyexcel.plugins": {
+    "cordova-plugin-whitelist": {
+      "PACKAGE_NAME": "com.opensource.rover"
+    },
+    "plugin-logcat": {
       "PACKAGE_NAME": "com.opensource.rover"
     }
   },

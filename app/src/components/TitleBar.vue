@@ -16,42 +16,44 @@
 </template>
 
 <script>
+
 export default {
   name: 'TitleBar',
   props: ['fileName', 'status'],
-  computed:{
-    indicator: function(){
-      return this.fileName+'-'+this.status;
+  computed: {
+    indicator: function() {
+      return this.fileName + "-" + this.status;
     }
   },
-  methods:{
-    onCreateNewExcel: function(){
-      alert('click')
-      cordova.plugins.Test.coolMethod('some msg');
+  methods: {
+    onCreateNewExcel: function() {
+      alert('click');
+      const Log = cordova.plugins.Logcat;
+      Log.i('title-bar','click');
     }
   }
-}
+};
 </script>
 
 <style scoped>
-.se-container{
+.se-container {
   padding: 4px 0;
 }
-.se-indicator{
+.se-indicator {
   margin: 0;
   text-align: center;
   font-size: 16px;
   color: #fff;
 }
-.se-toolbar{
-  color:#fff;
+.se-toolbar {
+  color: #fff;
 }
-.se-toolbar img{
+.se-toolbar img {
   padding: 6px;
-  width:28px;
+  width: 28px;
   height: 28px;
 }
-.se-toolbar img.margin-right{
-  margin-right: 10px; 
+.se-toolbar img.margin-right {
+  margin-right: 10px;
 }
 </style>

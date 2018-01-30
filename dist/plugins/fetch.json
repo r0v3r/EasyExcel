@@ -15,10 +15,10 @@
     "is_top_level": true,
     "variables": {}
   },
-  "com.opensource.rover.easyexcel.plugins": {
+  "plugin-logcat": {
     "source": {
       "type": "local",
-      "path": "/home/rover/Workspace/EasyExcel/dist/node_modules/com.opensource.rover.easyexcel.plugins"
+      "path": "/home/rover/Workspace/EasyExcel/dist/node_modules/plugin-logcat"
     },
     "is_top_level": true,
     "variables": {}
