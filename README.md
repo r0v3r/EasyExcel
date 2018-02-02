@@ -18,3 +18,9 @@
     plugman create --name <pluginName> --plugin_id <pluginID> --plugin_version <version>
     ```
     to create. Then `plugman platform add --platform_name <platform>` to support a platform. Because the plugman bug, developer should edit the `<source-file>` node in plugin.xml, change `target-dir` according to your `plugin_id` when you create the plugin.[eg. if `plugin_id` is aaa-bbb, then change the `target-dir` to `src/aaa/bbb/` ]
+
+- after created the plugin, use 
+    ```
+    sudo plugman createpackagejson ./
+    ```
+    in the `plugin dir`

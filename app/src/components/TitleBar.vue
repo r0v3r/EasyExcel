@@ -27,9 +27,13 @@ export default {
   },
   methods: {
     onCreateNewExcel: function() {
-      alert('click');
       const Log = cordova.plugins.Logcat;
       Log.i('title-bar','click');
+      cordova.plugins.FileExplorer.open(function(message){
+        alert(message);
+      }, function(error){
+        alert('open file error: '+error);
+      });
     }
   }
 };

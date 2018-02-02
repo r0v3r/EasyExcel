@@ -15,6 +15,9 @@
     },
     "plugin-logcat": {
       "PACKAGE_NAME": "com.opensource.rover"
+    },
+    "plugin-file": {
+      "PACKAGE_NAME": "com.opensource.rover"
     }
   },
   "dependent_plugins": {}
