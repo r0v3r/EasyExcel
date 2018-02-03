@@ -8,8 +8,9 @@
         <img src="../assets/add.png" @click="onCreateNewExcel"/>
       </div>
       <div>
-        <img src='../assets/save-as.png' class="margin-right"/>
-        <img src="../assets/save.png" class="margin-right"/>
+        <img src="../assets/open.png" class="margin-right" @click="onOpenExcel"/>
+        <img src='../assets/save-as.png' class="margin-right" @click="onSaveAsNewExcel"/>
+        <img src="../assets/save.png" class="margin-right" @click="onSaveExcel"/>
       </div>
     </el-row>
   </div>
@@ -26,6 +27,16 @@ export default {
   },
   methods: {
     onCreateNewExcel: function() {
+      
+    },
+    onOpenExcel: function(){
+
+    },
+    onSaveAsNewExcel: function(){
+
+    },
+    onSaveExcel: function(){
+
     }
   }
 };
