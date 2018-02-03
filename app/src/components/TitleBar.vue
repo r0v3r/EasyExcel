@@ -31,8 +31,11 @@ export default {
       
     },
     onOpenExcel: function(){
+      let component = this;
       cordova.plugins.Excel.open(function(path){
-        cordova.plugins.Excel.read(path, function(){}, function(){});
+        cordova.plugins.Excel.read(path, function(sheet){
+          component.$emit('openedExcel', sheet);
+        }, function(){});
       }, function(error){
         alert(error);
       });

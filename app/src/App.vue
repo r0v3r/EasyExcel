@@ -1,7 +1,7 @@
 <template>
   <el-container id="app">
     <el-header>
-      <title-bar :file-name="fileName" :status="status"></title-bar>
+      <title-bar :file-name="fileName" :status="status" @openedExcel="handleOpenedExcel"></title-bar>
     </el-header>
     <div class="main">
       <excel-editor :file-content="fileContent"></excel-editor>
@@ -60,6 +60,12 @@ export default {
   components: {
     'title-bar': TitleBar,
     'excel-editor': ExcelEditor 
+  },
+  methods:{
+    handleOpenedExcel: function(sheet){
+      this.fileContent = sheet;
+      alert('excel 读取成功');
+    }
   }
 }
 </script>

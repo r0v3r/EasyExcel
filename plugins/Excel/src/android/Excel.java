@@ -55,9 +55,19 @@ public class Excel extends CordovaPlugin {
             Workbook workbook = Workbook.getWorkbook(new File(filePath));
             Sheet sheet = workbook.getSheet(0);
             int sheetRows = sheet.getRows();
-            int sheetColumns = sheet.getColumns();  
+            int sheetColumns = sheet.getColumns();
+            JSONArray jsonSheet = new JSONArray();
+            for(int i=0; i<sheetRows; i++){
+                JSONArray row = new JSONArray();
+                for (int j=0; j<sheetColumns; j++){
+                    String content = sheet.getCell(j,i).getContents();
+                    row.put(content);
+                }
+                jsonSheet.put(row);
+            }
             Log.w(TAG, sheet.getName());
-            callbackContext.success("success");
+            Log.i(TAG, jsonSheet.toString());
+            callbackContext.success(jsonSheet);
         } catch (IOException e) {
             e.printStackTrace();
             callbackContext.error("打开文件错误");
