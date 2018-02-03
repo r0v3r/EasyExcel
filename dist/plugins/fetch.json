@@ -10,15 +10,15 @@
   "cordova-plugin-file": {
     "source": {
       "type": "registry",
-      "id": "cordova-plugin-file@6.0.1"
+      "id": "cordova-plugin-file@^6.0.1"
     },
     "is_top_level": true,
     "variables": {}
   },
-  "plugin-logcat": {
+  "easyexcel.plugins.excel": {
     "source": {
       "type": "local",
-      "path": "/home/rover/Workspace/EasyExcel/dist/node_modules/plugin-logcat"
+      "path": "/home/rover/Workspace/EasyExcel/dist/node_modules/easyexcel.plugins"
     },
     "is_top_level": true,
     "variables": {}

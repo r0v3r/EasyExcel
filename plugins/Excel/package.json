@@ -1,9 +1,9 @@
 {
-  "name": "plugin-logcat",
+  "name": "easyexcel.plugins",
   "version": "0.0.1",
   "description": "",
   "cordova": {
-    "id": "plugin-logcat",
+    "id": "easyexcel.plugins",
     "platforms": [
       "android"
     ]
@@ -12,6 +12,6 @@
     "ecosystem:cordova",
     "cordova-android"
   ],
-  "author": "r0v3r",
-  "license": "MIT"
+  "author": "",
+  "license": "ISC"
 }

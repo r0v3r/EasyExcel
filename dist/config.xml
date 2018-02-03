@@ -1,5 +1,5 @@
 <?xml version='1.0' encoding='utf-8'?>
-<widget id="com.opensource.rover" version="1.0.0" xmlns="http://www.w3.org/ns/widgets" xmlns:cdv="http://cordova.apache.org/ns/1.0">
+<widget id="com.opensource.rover.easyexcel" version="1.0.0" xmlns="http://www.w3.org/ns/widgets" xmlns:cdv="http://cordova.apache.org/ns/1.0">
     <name>EasyExcel</name>
     <description>
         A sample Apache Cordova application that responds to the deviceready event.
@@ -28,6 +28,6 @@
         <allow-intent href="itms-apps:*" />
     </platform>
     <plugin name="cordova-plugin-file" spec="^6.0.1" />
-    <plugin name="plugin-logcat" spec="../plugins/Logcat" />
+    <plugin name="easyexcel.plugins.excel" spec="../plugins/Excel" />
     <engine name="android" spec="^7.0.0" />
 </widget>

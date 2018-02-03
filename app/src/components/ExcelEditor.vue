@@ -93,7 +93,7 @@ export default {
           $('td').removeClass();
           $('thead td:not(:first-child)').addClass('shadowed');
           $('tbody tr:nth-child('+cssIndex+') td:first-child').addClass('chosen');
-          $('tbody tr:nth-child('+cssIndex+') td').addClass(['shadowed', 'chosen-row']);
+          $('tbody tr:nth-child('+cssIndex+') td:not(:first-child)').addClass(['shadowed', 'chosen-row']);
           $('tbody tr:nth-child('+cssIndex+') td:nth-child(2)').addClass('focus');
       },
       handleChooseCell: function(rindex, cindex){
@@ -134,7 +134,7 @@ table{
     -webkit-box-sizing:border-box; /* Safari */
 }
 table td{
-    padding: .25rem .5rem;
+    padding: .5rem 1rem;
     min-width: 36px;
     font-size: 1rem;
     line-height: 1rem;

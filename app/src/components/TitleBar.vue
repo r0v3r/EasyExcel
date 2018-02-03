@@ -8,15 +8,16 @@
         <img src="../assets/add.png" @click="onCreateNewExcel"/>
       </div>
       <div>
-        <img src='../assets/save-as.png' class="margin-right"/>
-        <img src="../assets/save.png" class="margin-right"/>
+        <img src="../assets/open.png" class="margin-right" @click="onOpenExcel"/>
+        <img src='../assets/save-as.png' class="margin-right" @click="onSaveAsNewExcel"/>
+        <img src="../assets/save.png" class="margin-right" @click="onSaveExcel"/>
       </div>
     </el-row>
   </div>
 </template>
 
 <script>
-
+const $ = require('jquery');
 export default {
   name: 'TitleBar',
   props: ['fileName', 'status'],
@@ -27,9 +28,23 @@ export default {
   },
   methods: {
     onCreateNewExcel: function() {
-      alert('click');
-      const Log = cordova.plugins.Logcat;
-      Log.i('title-bar','click');
+      
+    },
+    onOpenExcel: function(){
+      let component = this;
+      cordova.plugins.Excel.open(function(path){
+        cordova.plugins.Excel.read(path, function(sheet){
+          component.$emit('openedExcel', sheet);
+        }, function(){});
+      }, function(error){
+        alert(error);
+      });
+    },
+    onSaveAsNewExcel: function(){
+
+    },
+    onSaveExcel: function(){
+
     }
   }
 };
