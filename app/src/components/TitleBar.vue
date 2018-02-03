@@ -17,6 +17,7 @@
 </template>
 
 <script>
+const $ = require('jquery');
 export default {
   name: 'TitleBar',
   props: ['fileName', 'status'],
@@ -27,10 +28,13 @@ export default {
   },
   methods: {
     onCreateNewExcel: function() {
-      
+      cordova.plugins.Excel.coolMethod("mesg" , function(uri){
+        alert('open file : '+uri);
+      }, function(error){
+        alert(error);
+      });
     },
     onOpenExcel: function(){
-
     },
     onSaveAsNewExcel: function(){
 

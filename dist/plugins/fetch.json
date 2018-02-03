@@ -14,5 +14,13 @@
     },
     "is_top_level": true,
     "variables": {}
+  },
+  "easyexcel.plugins.excel": {
+    "source": {
+      "type": "local",
+      "path": "/home/rover/Workspace/EasyExcel/dist/node_modules/easyexcel.plugins"
+    },
+    "is_top_level": true,
+    "variables": {}
   }
 }

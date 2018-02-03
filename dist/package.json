@@ -17,7 +17,8 @@
     "cordova": {
         "plugins": {
             "cordova-plugin-whitelist": {},
-            "cordova-plugin-file": {}
+            "cordova-plugin-file": {},
+            "easyexcel.plugins.excel": {}
         },
         "platforms": [
             "android"
