@@ -14,21 +14,5 @@
     },
     "is_top_level": true,
     "variables": {}
-  },
-  "plugin-logcat": {
-    "source": {
-      "type": "local",
-      "path": "/home/rover/Workspace/EasyExcel/dist/node_modules/plugin-logcat"
-    },
-    "is_top_level": true,
-    "variables": {}
-  },
-  "plugin-file": {
-    "source": {
-      "type": "local",
-      "path": "/home/rover/Workspace/EasyExcel/dist/node_modules/plugin-file"
-    },
-    "is_top_level": true,
-    "variables": {}
   }
 }

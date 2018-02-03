@@ -27,8 +27,6 @@
         <allow-intent href="itms:*" />
         <allow-intent href="itms-apps:*" />
     </platform>
-    <plugin name="plugin-logcat" spec="../plugins/Logcat" />
     <plugin name="cordova-plugin-file" spec="^6.0.1" />
-    <plugin name="plugin-file" spec="../plugins/FileExplorer" />
     <engine name="android" spec="^7.0.0" />
 </widget>

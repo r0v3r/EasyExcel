@@ -16,7 +16,6 @@
 </template>
 
 <script>
-
 export default {
   name: 'TitleBar',
   props: ['fileName', 'status'],
@@ -27,13 +26,6 @@ export default {
   },
   methods: {
     onCreateNewExcel: function() {
-      const Log = cordova.plugins.Logcat;
-      Log.i('title-bar','click');
-      cordova.plugins.FileExplorer.open(function(message){
-        alert(message);
-      }, function(error){
-        alert('open file error: '+error);
-      });
     }
   }
 };

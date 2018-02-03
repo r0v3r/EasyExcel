@@ -9,7 +9,7 @@
     <platform name="android">
         <config-file parent="/*" target="res/xml/config.xml">
             <feature name="FileExplorer">
-                <param name="android-package" value="plugin.file.FileExplorer" />
+                <param name="android-package" value="plugin.file" />
             </feature>
         </config-file>
         <config-file parent="/*" target="AndroidManifest.xml"></config-file>

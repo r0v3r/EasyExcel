@@ -25,6 +25,10 @@ public class FileExplorer extends CordovaPlugin {
     public boolean execute(String action, JSONArray args, CallbackContext callbackContext) throws JSONException {
         if (action.equals("open")) {
             this.open(callbackContext);
+
+
+            Log.i("tag", "asdfjsdkjf");
+            
             return true;
         }
         return false;

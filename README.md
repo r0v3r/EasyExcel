@@ -23,4 +23,9 @@
     ```
     sudo plugman createpackagejson ./
     ```
-    in the `plugin dir`
+    in the `plugin dir` to create package.json.
+    And then in `dist dir` use 
+    ```
+    sudo cordova plugin add ../plugins/<pluginName> --link
+    ``` 
+    to link the plugin, so that any changes in `plugin dir` will be applied to cordova dir

@@ -1,7 +1,6 @@
 {
   "name": "plugin-file",
   "version": "0.1.0",
-  "description": "",
   "cordova": {
     "id": "plugin-file",
     "platforms": [
@@ -13,5 +12,6 @@
     "cordova-android"
   ],
   "author": "rover",
-  "license": "MIT"
+  "license": "MIT",
+  "description": ""
 }

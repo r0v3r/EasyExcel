@@ -2,3 +2,6 @@
 dist/node_modules/
 dist/platforms/
 dist/www/*
+
+package-lock.json
+
