@@ -28,13 +28,14 @@ export default {
   },
   methods: {
     onCreateNewExcel: function() {
-      cordova.plugins.Excel.coolMethod("mesg" , function(uri){
-        alert('open file : '+uri);
+      
+    },
+    onOpenExcel: function(){
+      cordova.plugins.Excel.open(function(path){
+        cordova.plugins.Excel.read(path, function(){}, function(){});
       }, function(error){
         alert(error);
       });
-    },
-    onOpenExcel: function(){
     },
     onSaveAsNewExcel: function(){
 
